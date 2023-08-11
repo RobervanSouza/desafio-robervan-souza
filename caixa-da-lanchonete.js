@@ -54,11 +54,7 @@ class CaixaDaLanchonete {
                 return "Item extra não pode ser pedido sem o principal";
             }
         }
-        for (const item of carrinho) {
-            if ((item.item.codigo === 'chantily' || item.item.codigo === 'queijo') && !temCafe && !temSanduiche) {
-                return "Item extra não pode ser pedido sem o principal";
-            }
-        }
+        
 
         if (carrinho.length === 0) {
             return "Não há itens no carrinho de compra!";
