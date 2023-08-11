@@ -78,13 +78,17 @@ class CaixaDaLanchonete {
             valorTotal *= 1.03; // Aplicar acréscimo de 3%
         } 
 
-        return `R$ ${valorTotal.toFixed(2)}`;
+   
+        return `R$ ${valorTotal.toFixed(2).replace('.', ',')}`;
+        
     }
 }
 
 // Exemplos
 const caixa = new CaixaDaLanchonete();
 
-console.log(caixa.calcularValorDaCompra('dinheiro', [ ''])); // Saída: "R$ 5,25"
+console.log(caixa.calcularValorDaCompra('dinheiro', ['cafe,1'])); // Saída: "R$ 5,25"
 console.log(caixa.calcularValorDaCompra('debito', [ 'cafe,1', 'chantily,1' ])); // Saída: "R$ 4,50"
 console.log(caixa.calcularValorDaCompra('debito', [ 'cafe,1', 'sanduiche,1' ])); // Saída: "R$ 9,23"
+
+export {CaixaDaLanchonete};

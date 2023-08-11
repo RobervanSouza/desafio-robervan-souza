@@ -2,10 +2,15 @@
   "name": "desafio-robervan-souza",
   "version": "1.0.0",
   "description": "DB | CRESCER com propósito",
-  "main": "caixa-da-lanchonete.js",
+  "main": "/caixa-da-lanchonete.js",
+  "type": "module",
   "scripts": {
-    "test": "test"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
+  "keywords": [],
   "author": "Robervan Souza",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.6.2"
+  }
 }
