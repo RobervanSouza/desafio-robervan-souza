@@ -1,0 +1,11 @@
+{
+  "name": "desafio-robervan-souza",
+  "version": "1.0.0",
+  "description": "DB | CRESCER com propósito",
+  "main": "caixa-da-lanchonete.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Robervan Souza",
+  "license": "ISC"
+}
