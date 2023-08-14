@@ -81,5 +81,6 @@ class CaixaDaLanchonete {
 }
 
 const caixa = new CaixaDaLanchonete();
+console.log(caixa.calcularValorDaCompra('dinheiro',[ 'cafe,1', 'chantily,1' ]))
 
 export { CaixaDaLanchonete };
